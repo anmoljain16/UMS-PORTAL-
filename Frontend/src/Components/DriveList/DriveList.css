@@ -1,0 +1,38 @@
+.drive-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.company-list {
+    flex: 1;
+    overflow-y: auto;
+    max-height: 100vh; /* Ensures the list can scroll but not exceed the viewport height */
+    padding-right: 10px;
+}
+
+.company-item {
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.company-item h2 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.drive-details {
+    flex: 2;
+    padding: 10px;
+    margin-left: 10%;}
+
+.drive-details iframe {
+    width: calc(100vh - 40px);
+    height: calc(100vh - 40px); /* Subtract padding for better presentation */
+    border: none;
+}
